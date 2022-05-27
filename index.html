@@ -5,10 +5,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/d3f0d7fe81.js" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
     <title>World Music Festival</title>
 </head>
 
@@ -17,12 +18,12 @@
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <div class="container-fluid">
                 <a class="brand navbar-brand" href="#">WMF</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggler"
-                    aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse" id="navbarToggler">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
                         <li class="nav-item">
                             <a class="nav-link active" aria-current="page" href="#">Home</a>
                         </li>
@@ -35,7 +36,7 @@
                         <li class="nav-item">
                             <a class="nav-link" href="#">Contact us</a>
                         </li>
-                        <li>
+                        <li class="nav-item">
                             <button class="btn btn-success" type="submit">Buy a ticket</button>
                         </li>
                     </ul>
@@ -60,196 +61,222 @@
         <button class="buy-btn btn btn-success" type="submit">Book now</button>
     </section>
     <section id="stages">
-        <h3 id="card-heading">Stage 1 - Rock Music</h3>
-        <div class="row row-cols-1 row-cols-lg-3 row-cols-md-2 g-4">
-            <div class="col">
-                <div class="artist-card card">
-                    <img src="pics/acdc.jpg" class="card-img-top" alt="...">
-                    <div class="row">
-                        <div class="date-card col-lg-3 col-xs-2">
-                            <p>Jan <br> 31</p>
-                        </div>
-                        <div class="col-lg-8 col-xs-10">
-                            <h5 class="card-title">ACDC</h5>
-                            <p class="card-text">AC/DC are an Australian rock band formed in Sydney in 1973 by
-                                Scottish-born brothers Malcolm and Angus Young. Their music is variously described as
-                                simply "rock and roll".</p>
-                            <hr>
-                            <p>Price $140</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col">
-                <div class="artist-card card">
-                    <img src="pics/gunsnroses.jpg" class="card-img-top" alt="...">
-                    <div class="row">
-                        <div class="date-card col-lg-3 col-xs-4">
-                            <p>Jan <br> 31</p>
-                        </div>
-                        <div class="col-lg-8 col-xs-8">
-                            <h5 class="card-title">Guns N' Roses</h5>
-                            <p class="card-text">Guns N' Roses is an American hard rock band from Los Angeles,
-                                California, formed in 1985 and they signed to Geffen Records in 1986. Since then, they
-                                gained a lot of popularity. </p>
-                            <hr>
-                            <p>Price $140</p>
+        <div class="rock-music">
+            <h2 class="rock-music pt-5 pb-3">Rock Music</h2>
+            <div class="row g-4 ">
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="artist-card">
+                        <img src="pics/acdc.jpg" class="card-img-top" alt="...">
+                        <div class="card-body row">
+                            <div class="col-3 d-grid align-content-center justify-content-center">JUNE <br> 1</div>
+                            <div class="col-9">
+                                <h5 class="card-title">ACDC</h5>
+                                <p class="card-text">AC/DC are an Australian rock band formed in Sydney in 1973 by
+                                    Scottish-born brothers Malcolm and Angus Young. Their music is variously described
+                                    as
+                                    simply "rock and roll".</p>
+                                <hr>
+                                <p>Price: 50€</p>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="col">
-                <div class="artist-card card">
-                    <img src="pics/zztop.jpg" class="card-img-top" alt="...">
-                    <div class="row">
-                        <div class="date-card col-lg-3 col-xs-6">
-                            <p>Jan <br> 31</p>
-                        </div>
-                        <div class="col-lg-8 col-xs-6">
-                            <h5 class="card-title">ZZ Top</h5>
-                            <p class="card-text">ZZ Top is an American rock band formed in 1969 in Houston, Texas. For
-                                51 years, the band comprised vocalist-guitarist Billy Gibbons, drummer Frank Beard and
-                                vocalist-bassist Dusty Hill.</p>
-                            <hr>
-                            <p>Price $140</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <button type="button" class="btn-cards btn btn-secondary">Load More</button>
-        <h3 id="card-heading">Stage 2 - Techno/Electro Music</h3>
-        <div class="row row-cols-1 row-cols-lg-3 row-cols-md-2 g-4">
-            <div class="col">
-                <div class="artist-card card">
-                    <img src="pics/david-guetta.jpg" class="card-img-top" alt="...">
-                    <div class="row">
-                        <div class="date-card col-lg-3 col-xs-6">
-                            <p>Jan <br> 31</p>
-                        </div>
-                        <div class="col-lg-8 col-xs-6">
-                            <h5 class="card-title">David Guetta</h5>
-                            <p class="card-text">Pierre David Guetta is a French DJ, record producer, musician and
-                                songwriter.He has over 50 million record sales globally.In 2011, 2020 and 2021,he was
-                                voted No.1 DJ in the world.</p>
-                            <hr>
-                            <p>Price $140</p>
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="artist-card">
+                        <img src="pics/gunsnroses.jpg" class="card-img-top" alt="...">
+                        <div class="card-body row">
+                            <div class="col-3 d-grid align-content-center justify-content-center">JUNE <br> 2</div>
+                            <div class="col-9">
+                                <h5 class="card-title">Guns N' Roses</h5>
+                                <p class="card-text">Guns N' Roses is an American hard rock band from Los Angeles,
+                                    California, formed in 1985 and they signed to Geffen Records in 1986. Since then,
+                                    they
+                                    gained a lot of popularity. </p>
+                                <hr>
+                                <p>Price: 60€</p>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="col">
-                <div class="artist-card card">
-                    <img src="pics/afrojack.jpg" class="card-img-top" alt="...">
-                    <div class="row">
-                        <div class="date-card col-lg-3 col-xs-6">
-                            <p>Jan <br> 31</p>
-                        </div>
-                        <div class="col-lg-8 col-xs-6">
-                            <h5 class="card-title">Afrojack</h5>
-                            <p class="card-text">Nick Leonardus van de Wall, better known as Afrojack, is a Dutch DJ,
-                                record producer and remixer from Spijkenisse. In 2007, he founded the record label Wall
-                                Recordings.</p>
-                            <hr>
-                            <p>Price $140</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col">
-                <div class="artist-card card">
-                    <img src="pics/timmytrumpet.jpeg" class="card-img-top" alt="...">
-                    <div class="row">
-                        <div class="date-card col-lg-3 col-xs-6">
-                            <p>Jan <br> 31</p>
-                        </div>
-                        <div class="col-lg-8 col-xs-6">
-                            <h5 class="card-title">Timmy Trumpet</h5>
-                            <p class="card-text">Timothy Jude xsith,is an Australian musician, "DJ", songwriter and
-                                record producer. He has become known for playing the trumpet live and making use of jazz
-                                in music.</p>
-                            <hr>
-                            <p>Price $140</p>
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="artist-card">
+                        <img src="pics/zztop.jpg" class="card-img-top" alt="...">
+                        <div class="card-body row">
+                            <div class="col-3 d-grid align-content-center justify-content-center">JUNE <br> 3</div>
+                            <div class="col-9">
+                                <h5 class="card-title">ZZ Top</h5>
+                                <p class="card-text">ZZ Top is an American rock band formed in 1969 in Houston, Texas.
+                                    For
+                                    51 years, the band comprised vocalist-guitarist Billy Gibbons, drummer Frank Beard
+                                    and
+                                    vocalist-bassist Dusty Hill.</p>
+                                <hr>
+                                <p>Price: 45€</p>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <button type="button" class="btn-cards btn btn-secondary">Load More</button>
-        <h3 id="card-heading">Stage 3 - Pop/Alternative Rock Music</h3>
-        <div class="row row-cols-1 row-cols-lg-3 row-cols-md-2 g-4">
-            <div class="col">
-                <div class="artist-card card">
-                    <img src="pics/imagine dragons.jpg" class="card-img-top" alt="...">
-                    <div class="row">
-                        <div class="date-card col-lg-3 col-xs-6">
-                            <p>Jan <br> 31</p>
-                        </div>
-                        <div class="col-lg-8 col-xs-6">
-                            <h5 class="card-title">Imagine Dragons</h5>
-                            <p class="card-text">Imagine Dragons is an American pop rock band from Las Vegas, Nevada,
-                                consisting of lead singer Dan Reynolds, guitarist Wayne Sermon, bassist Ben McKee and
-                                drummer Daniel Platzman.</p>
-                            <hr>
-                            <p>Price $140</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col">
-                <div class="artist-card card">
-                    <img src="pics/rhcp.jpg" class="card-img-top" alt="...">
-                    <div class="row">
-                        <div class="date-card col-lg-3 col-xs-6">
-                            <p>Jan <br> 31</p>
-                        </div>
-                        <div class="col-lg-8 col-xs-6">
-                            <h5 class="card-title">Red Hot Chilli Peppers</h5>
-                            <p class="card-text">The Red Hot Chili Peppers are an American rock band formed in Los
-                                Angeles in 1983. Their music incorporates elements of alternative rock, funk, punk rock
-                                and psychedelic rock.</p>
-                            <hr>
-                            <p>Price $140</p>
+        <div class="text-center">
+            <button type="button" class="btn btn-secondary my-5">Load more</button>
+        </div>
+        <div class="techno-music">
+            <h2 class="techno pt-4 pb-3">Techno Music</h2>
+            <div class="row  g-4">
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="artist-card">
+                        <img src="pics/david-guetta.jpg" class="card-img-top" alt="...">
+                        <div class="card-body row">
+                            <div class="col-3 d-grid align-content-center justify-content-center">JUNE <br> 1</div>
+                            <div class="col-9">
+                                <h5 class="card-title">David Guetta</h5>
+                                <p class="card-text">Pierre David Guetta is a French DJ, record producer, musician and
+                                    songwriter.He has over 50 million record sales globally.In 2011, 2020 and 2021,he
+                                    was
+                                    voted No.1 DJ in the world.</p>
+                                <hr>
+                                <p>Price: 40€</p>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="col">
-                <div class="artist-card card">
-                    <img src="pics/linkinpark.jpg" class="card-img-top" alt="...">
-                    <div class="row">
-                        <div class="date-card col-lg-3 col-xs-6">
-                            <p>Jan <br> 31</p>
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="artist-card">
+                        <img src="pics/afrojack.jpg" class="card-img-top" alt="...">
+                        <div class="card-body row">
+                            <div class="col-3 d-grid align-content-center justify-content-center">JUNE <br> 2</div>
+                            <div class="col-9">
+                                <h5 class="card-title">Afrojack</h5>
+                                <p class="card-text">Nick Leonardus van de Wall, better known as Afrojack, is a Dutch
+                                    DJ,
+                                    record producer and remixer from Spijkenisse. In 2007, he founded the record label
+                                    Wall
+                                    Recordings.</p>
+                                <hr>
+                                <p>Price: 30€</p>
+                            </div>
                         </div>
-                        <div class="col-lg-8 col-xs-6">
-                            <h5 class="card-title">Linkin Park</h5>
-                            <p class="card-text">Linkin Park is an American rock band from Agoura Hills, California. The
-                                band's current lineup comprises Mike Shinoda, Brad Delson, Dave Farrell, DJ Joe Hahn and
-                                Rob Bourdon.</p>
-                            <hr>
-                            <p>Price $140</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="artist-card">
+                        <img src="pics/timmytrumpet.jpeg" class="card-img-top" alt="...">
+                        <div class="card-body row">
+                            <div class="col-3 d-grid align-content-center justify-content-center">JUNE <br> 3</div>
+                            <div class="col-9">
+                                <h5 class="card-title">Timmy Trumpet</h5>
+                                <p class="card-text">Timothy Jude xsith,is an Australian musician, "DJ", songwriter and
+                                    record producer. He has become known for playing the trumpet live and making use of
+                                    jazz
+                                    in music.</p>
+                                <hr>
+                                <p>Price: 35€</p>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <button type="button" class="btn-cards btn btn-secondary">Load More</button>
+        <div class="text-center">
+            <button type="button" class="btn btn-secondary my-5">Load more</button>
+        </div>
+        <div class="pop-music">
+            <h2 class="pop pt-4 pb-3">Pop/Alternative Rock Music</h2>
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="artist-card">
+                        <img src="pics/imagine dragons.jpg" class="card-img-top" alt="...">
+                        <div class="card-body row">
+                            <div class="col-3 d-grid align-content-center justify-content-center">JUNE <br> 1</div>
+                            <div class="col-9">
+                                <h5 class="card-title">Imagine Dragons</h5>
+                                <p class="card-text">Imagine Dragons is an American pop rock band from Las Vegas,
+                                    Nevada,
+                                    consisting of lead singer Dan Reynolds, guitarist Wayne Sermon, bassist Ben McKee
+                                    and
+                                    drummer Daniel Platzman.</p>
+                                <hr>
+                                <p>Price: 40€</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="artist-card">
+                        <img src="pics/rhcp.jpg" class="card-img-top" alt="...">
+                        <div class="card-body row">
+                            <div class="col-3 d-grid align-content-center justify-content-center">JUNE <br> 2</div>
+                            <div class="col-9">
+                                <h5 class="card-title">Red Hot Chilli Peppers</h5>
+                                <p class="card-text">The Red Hot Chili Peppers are an American rock band formed in Los
+                                    Angeles in 1983. Their music incorporates elements of alternative rock, funk, punk
+                                    rock
+                                    and psychedelic rock.</p>
+                                <hr>
+                                <p>Price: 40€</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="artist-card">
+                        <img src="pics/linkinpark.jpg" class="card-img-top" alt="...">
+                        <div class="card-body row">
+                            <div class="col-3 d-grid align-content-center justify-content-center">JUNE <br> 3</div>
+                            <div class="col-9">
+                                <h5 class="card-title">Linkin Park</h5>
+                                <p class="card-text">Linkin Park is an American rock band from Agoura Hills, California.
+                                    The
+                                    band's current lineup comprises Mike Shinoda, Brad Delson, Dave Farrell, DJ Joe Hahn
+                                    and
+                                    Rob Bourdon.</p>
+                                <hr>
+                                <p>Price: 40€</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="text-center">
+            <button type="button" class="btn btn-secondary my-5">Load more</button>
+        </div>
     </section>
     <section id="contact">
-        <div>
-            <h3 id="">Get in touch</h3>
-            <img src="pics/contactimg.jpg" alt="" class="contact-img">
+        <div class="row bg-light p-5 m-0">
+            <div class="col-12 col-sm-12 col-md-12 col-lg-4  align-items-center justify-content-center">
+                <div class="card-body">
+                    <h5 class="card-title">Get in touch</h5>
+                </div>
+                <img src="pics/contactimg.jpg" class="contact-img" alt="...">
+            </div>
+            <div class="email col-12 col-sm-12 col-md-12 col-lg-3 p-4 ">
+                <div class="contact-form">
+                    <label for="input" class="form-label">Email address</label>
+                    <input type="email" class="form-control" id="input" placeholder="Enter e-mail">
+                    <p> We'll never share your email with anyone else</p>
+                </div>
+                <div class="contact-form">
+                    <label for="input" class="form-label">Name</label>
+                    <input type="text" class="form-control" id="input" placeholder="Your name">
+                </div>
+                <div class="contact-form">
+                    <label for="textarea" class="form-label">Message</label>
+                    <textarea class="form-control" id="textarea" rows="3"></textarea>
+                    <button type="button" class="btn btn-success mt-1">Submit</button>
+                </div>
+            </div>
         </div>
-        <div>
-            <p>E-mail:</p>
-            <input type="text" placeholder="Enter E-Mail">
-            <p>Name</p>
-            <input type="text" placeholder="Your Name">
-            <p>Message</p>
-            <input type="text" placeholder="Write message here..."><br>
-            <button class="btn-contact btn btn-success" type="submit">Submit</button>
-        </div>
+    </div>
     </section>
+    <footer class=" bg-dark">
+        <div class="footer">
+            <p class="copyright text-white text-center p-4 mb-0">&copy; 2022 Copyright Tamara Zolnajic</p>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
 </body>
 
 </html>
