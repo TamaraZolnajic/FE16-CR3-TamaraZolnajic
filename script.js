@@ -20,3 +20,7 @@ console.log("On the first day of the festival, I was lucky to watch ACDC, Timmy 
 console.log("Then I watched the bands Guns N Roses, ZZ Top and Afrojack on the second day and it cost me " + fest_day2 + " € in total that day.");
 var alldays = fest_day1 + fest_day2 + fest_day3;
 console.log("I was a bit tired on the third day but it was so much worth it to watch the bands Linkin Park, Red Hot Chilli Peppers, David Guetta and I spent " + alldays + "€ for the three days of the festival.");
+
+var reduced = alldays * 0.7;
+var saved = alldays * 0.3;
+console.log("If I had booked the concert with enough time in advance, it would have cost me a total of " + reduced + "€ and I would have saved " + saved + "€.");
