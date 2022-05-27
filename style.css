@@ -23,27 +23,38 @@
     color: #198754;
 }
 
-.icons{
-    
-}
-
 .text{
     color: black;
 }
 
 .buy-btn{
-    margin-bottom: 15%;
+    margin-bottom: 12%;
 }
 
 #stages{
-    padding: 2% 23%;
+    padding:0 20% 5%;
 }
+#card-heading{
+    font-size: 2rem;
+    padding-bottom: 4%;
+    padding-top: 4%;
+}
+
+
 
 #contact{
     background-color: #F8F9FA;
     width: 100%;
     display: flex;
-    padding: 2% 23%;
+    gap: 15%;
+    padding:2% 20% 5%;
+}
+.contact-img{
+    width: 400px;
+    height: 280px;
+}
+#contact-heading{
+    padding-bottom: 2%;
 }
 
 
