@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/d3f0d7fe81.js" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+    <title>Reviews</title>
+</head>
+
+<body>
+    <section id="hero">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+                <a class="brand navbar-brand" href="#">WMF</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">About us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Concerts</a>
+                            </a>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Contact us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Reviews</a>
+                        </li>
+                        <li class="nav-item">
+                            <button class="btn btn-success" type="submit">Buy a ticket</button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <h1 id="hero-heading">Reviews</h1>
+        <div class="row" id="iconp">
+            <div class="feature-box col-lg-4">
+                <i class="icons fa-solid fa-chair "></i>
+                <span class="text">5000 seats</span>
+            </div>
+            <div class="feature-box col-lg-4">
+                <i class="icons fa-solid fa-user "></i>
+                <span class="text">12 Artists</span>
+            </div>
+            <div class="feature-box col-lg-4">
+                <i class="icons fa-solid fa-location-dot "></i>
+                <span class="text">Vienna, Austria</span>
+            </div>
+        </div>
+        <button class="buy-btn btn btn-success" type="submit">Book now</button>
+    </section>
+
+
+    <section id="reviews">
+        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active" data-bs-interval="5000">
+                    <h2 id="carousel-heading">Anastasia, 21, Sweden</h2>
+                    <img src="pics/review1.jpg" alt="" class="review-img">
+                    <p id="carouselp">"Spectacular location and amazing time at the fortress, dancing with happy people and enjoined summer!"</p>
+                </div>
+                <div class="carousel-item" data-bs-interval="5000">
+                    <h2 id="carousel-heading">Maria, 24, Italy</h2>
+                    <img src="pics/review2.jpg" alt="" class="review-img">
+                    <p id="carouselp">"I have had the most amazing time at the festival for the past few years! After the concert awaited the tour of the beautiful city of Vienna. 100% recommend."</p>
+                </div>
+                <div class="carousel-item" data-bs-interval="5000">
+                    <h2 id="carousel-heading">Lucas, 27, Norway</h2>
+                    <img src="pics/review3.jpg" alt="" class="review-img">
+                    <p id="carouselp">"Not only will you have a blast, but you will drink amazing freshly brewed beer and eat your weight in Viennese cousine after."</p>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </section>
+
+    <footer class=" bg-dark">
+        <div class="footer">
+            <p class="copyright text-white text-center p-4 mb-0">&copy; 2022 Copyright Tamara Zolnajic</p>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    
+</body>
